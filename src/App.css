@@ -11,6 +11,9 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+  .App-camera-container {
+    animation: App-container-opacity 20ms linear;
+  }
 }
 
 .App-header {
@@ -26,6 +29,26 @@
 
 .App-link {
   color: #61dafb;
+  margin-bottom: 20px;
+}
+
+.App-camera {
+  margin-bottom: 20px;
+}
+
+.App-camera-container {
+  width: auto;
+  height: auto;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.App-screenshot {
+  height: 40vmin;
+  pointer-events: none;
 }
 
 @keyframes App-logo-spin {
@@ -34,5 +57,14 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes App-container-opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    transform: 1;
   }
 }
